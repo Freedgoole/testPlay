@@ -1,0 +1,237 @@
+@font : Verdana, Geneva, sans-serif;
+@fontColorNavbar: #294592;
+.contant {
+    float: right;
+    width: 76%;
+    &::after{
+        content: '.';
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+}
+.contant-news {
+    width: 71%;
+    float: left;
+    margin-top: 5px;
+    margin-left: -3px;
+    &_title {
+        font-family: @font;
+        font-size: 23.62px;
+        color: #134094;
+        font-weight: 300;
+        margin-bottom: 25px;
+        &-allotment {
+            font-family: @font;
+            color: #c20016;
+            text-transform: uppercase;
+        }
+    }
+    &_video {
+        width: 100%; 
+    }
+    &_img  {
+        width: 100%;
+    }
+    &_video-menu {
+            width: 100%;
+            background-color: #9b9b9b;
+            height: 20px;
+            line-height: 20px;
+            position: relative;
+            top: -23px;
+            box-sizing: border-box;
+            padding: 0 5px;
+            &_remove {
+                font-family: @font;
+                font-size: 11px;
+                color: #fff;
+                text-decoration: none; 
+                display: block;
+                float: left;
+            }
+            &_test{
+                font-family: @font;
+                font-size: 12px;
+                color: #fff;
+                text-decoration: none; 
+                display: block;
+                float: right;
+            }     
+    }
+    &::after{
+        content: '.';
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+}
+.contant-personal {
+    float: right;
+    width: 26%;
+    text-align: center;
+    margin-top: 26px;
+    .login-title {
+        font-weight: normal;
+        color: #134094;
+        font-size: 19px;
+        font-family: @font;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+    }
+    .login-avatar {
+        margin-top: 25px;
+    }
+    .login-link {
+        display: block;
+        margin-top: 8px;
+        font-size: 14px;
+        color: #444444;
+        font-family: @font;
+        text-transform: capitalize;
+    }
+
+    .task {
+        margin-top: 20px;
+        &_title {
+            font-size: 13px;
+            color: #134094;
+            text-transform: uppercase;
+            font-family: @font;
+        }
+        &_list{
+            list-style-type: none;
+            padding: 0 8px;
+            margin: 8px 0 0 0;
+            margin-bottom: 15px;  
+            &-item {
+                width: 100%;  
+                &-name {
+                    float: left;
+                    font-family: @font;
+                    font-size: 13px;
+                }
+            &-status {
+                float: right;
+                .status-work {
+                    color: red
+                }
+                .status-all {
+                    color: black;
+                }
+            }
+            &::after{
+                content: '.';
+                display: block;
+                height: 0;
+                clear: both;
+                visibility: hidden;
+            }
+            }
+            &::after{
+                content: '.';
+                display: block;
+                height: 0;
+                clear: both;
+                visibility: hidden;
+            }
+        }
+    }  
+    &::after{
+        content: '.';
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+    .interview {
+        padding: 15px 0;
+        border-top: 1px solid #cccccc;
+        &-title {
+            color: #c20016;
+            font-size: 18xp;
+            float: left;
+            font-family: @font;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        &-question {
+            padding-top: 20px;
+            text-align: left;
+            font-size: 13px;
+            color: #2a4290;
+            font-family: @font;
+        }
+      
+        &::after{
+            content: '.';
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        &-ans {
+            width: 100%;
+            display: block;
+            text-align: left;
+            margin-bottom: 4px;
+            &_inpt {
+                margin-right: 9px;
+            }
+            &_text {
+                font-style: italic;
+                font-size: 11px;
+                font-family: @font;
+                color: #575756;
+                position: absolute;
+            }
+        }
+        &::after{
+            content: '.';
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+    }
+}
+.main-contant::after{
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.nav-bar {
+    width: 22%;
+    float: left;
+    margin-top: 23px;
+    &_list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;       
+    }
+    &_item {
+        display: block;
+        width: 87%;
+        text-decoration: none;
+        font-family: @font;
+        color: @fontColorNavbar;
+        font-size: 13px;
+        padding: 18px 0 18px 11px;
+        border-top: 1px solid #d3d3d3;
+        &:hover {
+            color: black;
+        }
+    }
+    &::after{
+        content: '.';
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+}
+

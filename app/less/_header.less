@@ -1,0 +1,119 @@
+@font : Verdana, Geneva, sans-serif;
+@colofont: #ffffff;
+@bgColorNav: #124093;
+
+.header-top {
+    height: 38px;
+    background-color: #c5c5c5;
+    padding: 0 15px 0 14px;
+}
+.header-info {
+    float: left;
+    margin-top: 8px;
+    &_login {
+        font-family: @font;
+        font-size: 13px;
+        color: @colofont;  
+    }
+    &_date {
+        font-family: @font;
+        font-size: 13px;
+        color: @colofont;
+        margin-left: 19px;
+        font-weight: bold;          
+    }
+}
+.header-search {
+    float: right;
+    margin-top: 7px;
+    &_inpt {
+        width: 130px;
+        border: 1px solid #9b9b9b;
+        font-size: 11px;
+        margin-left: 4px;
+        padding: 3px 4px;
+        ::-webkit-input-placeholder {color:#9b9b9b; letter-spacing: 1px;}
+        ::-moz-placeholder          {color:#9b9b9b; letter-spacing: 1px;}/* Firefox 19+ */
+        :-moz-placeholder           {color:#9b9b9b; letter-spacing: 1px;}/* Firefox 18- */
+        :-ms-input-placeholder      {color:#9b9b9b; letter-spacing: 1px;}
+    }
+    &_btn {
+        border: 1px solid #20201e;
+        background-color: #9b9b9b;
+        font-size: 11px;
+        padding: 3px 10px;
+        margin-left: 8px;
+        font-family: @font;
+    }
+}
+.header-baner {
+    width: 100%;
+    height: 117px;
+    padding: 0 14px 0 14px;
+    box-sizing: border-box;
+    &_logo {
+        margin-top: 26px;
+        float: left;
+        width: 352px; 
+    }
+    &_quote {
+        float: right;
+        font-family: @font;
+        font-size: 19px;
+        font-weight: 300;
+        letter-spacing: -1px;
+        color: #003ca2;
+        max-width: 35%;
+        margin-top: 7px;
+    }
+    &::after{
+        content: '.';
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+} 
+.header-img {
+    width: 100%;
+    height: 226px;
+    background: url(../img/fly.jpg) no-repeat;
+}
+.head-nav {
+    width: 100%;
+    list-style-type: none;
+    background-color: @bgColorNav;
+    height: 47px;
+    padding: 0;
+    margin: 0;
+    &_item {
+        text-decoration: none;
+        font-family: @font;
+        font-weight: bold;
+        color: #fff;
+        float: left;
+        line-height: 43px;
+        width: 16.667%;
+        text-align: center;
+        border-top: 4px solid #fff;
+        border-bottom: 6px solid #fff;
+        transition: 0.7s;
+        &:hover {
+            border-bottom: 6px solid red; 
+        } 
+        &:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+            }
+    }  
+    &:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+        } 
+}

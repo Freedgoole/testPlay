@@ -1,0 +1,19 @@
+@import "node_modules/normalize.less/normalize.less";
+@import "_media";
+@import '_header';
+@import "_contant";
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+    &::after{
+        content: '.';
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+}
+.title {
+    position: absolute;
+    top:39%;
+}
